@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <limits>
+
+using namespace std;
+
+
+int main()
+{
+	// input validation with a do-while loop
+	int x;
+	
+	do
+	{
+		cout << "Enter an integer greater than 0: ";
+		cin >> x;
+		if (x <= 0) cout << "Invalid Entry!!!!\n";
+		cin.clear();
+		cin.ignore(1000, '\n');
+	}while (x <= 0);
+
+}
